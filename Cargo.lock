@@ -280,6 +280,20 @@ dependencies = [
 [[package]]
 name = "flexi_core"
 version = "0.1.0"
+dependencies = [
+ "axum",
+ "flexi_media",
+ "flexi_organization",
+ "tokio",
+]
+
+[[package]]
+name = "flexi_media"
+version = "0.1.0"
+
+[[package]]
+name = "flexi_organization"
+version = "0.1.0"
 
 [[package]]
 name = "form_urlencoded"
@@ -474,10 +488,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "47e1ffaa40ddd1f3ed91f717a33c8c0ee23fff369e3aa8772b9605cc1d22f4c3"
 
 [[package]]
-name = "media"
-version = "0.1.0"
-
-[[package]]
 name = "memchr"
 version = "2.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -511,10 +521,6 @@ name = "once_cell_polyfill"
 version = "1.70.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "384b8ab6d37215f3c5301a95a4accb5d64aa607f1fcb26a11b5303878451b4fe"
-
-[[package]]
-name = "organization"
-version = "0.1.0"
 
 [[package]]
 name = "parking_lot"

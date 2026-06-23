@@ -4,3 +4,9 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+axum = { version = "0.8.9", features = ["tokio", "macros"] }
+tokio = { version = "1.52.3", features = ["full"] }
+
+# modules
+flexi_media = { path = "../media" }
+flexi_organization = { path = "../organization" }
