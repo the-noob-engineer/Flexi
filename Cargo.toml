@@ -1,0 +1,18 @@
+
+[workspace]
+members = ["crates/core", "crates/db", "flexi"]
+resolver = "2"
+
+[workspace.dependencies]
+flexi_core = {path = "./crates/core"}
+flexi_db = {path = "./crates/db"}
+
+# Packages
+axum = { version = "0.8.9", features = ["tokio", "macros"] }
+clap = { version = "4.6.7", features = ["derive"] }
+rayon = "1.12.0"
+sqlx = { version = "0.9.0", features = ["runtime-tokio"] }
+toml = "1.2.1"
+log = "0.4.35"
+env_logger = "0.11.11"
+serde = { version = "1.0.229", features = ["derive"] }
