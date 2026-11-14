@@ -1,3 +1,0 @@
-[workspace]
-members = ["flexi", "modules/core", "modules/media", "modules/organization"]
-resolver = "2"
